@@ -1,0 +1,38 @@
+export const blogPosts = [
+  {
+    id: 'b1',
+    title: 'How to Choose the Right Neighborhood',
+    category: 'Buying Guide',
+    date: 'Oct 2, 2026',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab6000fcffc6?auto=format&fit=crop&w=600&q=80',
+    excerpt: 'From schools to commute times, here\'s everything you need to consider when picking the perfect neighborhood for your family.',
+  },
+  {
+    id: 'b2',
+    title: '5 Things to Check Before Buying a Home',
+    category: 'Inspection Tips',
+    date: 'Sep 28, 2026',
+    readTime: '4 min read',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
+    excerpt: 'Don\'t sign on the dotted line until you\'ve checked these five critical things that could save you thousands.',
+  },
+  {
+    id: 'b3',
+    title: 'Is Renting or Buying Better in 2026?',
+    category: 'Market Analysis',
+    date: 'Sep 25, 2026',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1560518883-ce590e7e55db?auto=format&fit=crop&w=600&q=80',
+    excerpt: 'We break down the numbers to help you decide whether renting or buying makes more financial sense this year.',
+  },
+  {
+    id: 'b4',
+    title: 'How to Prepare Your Property for Sale',
+    category: 'Selling Guide',
+    date: 'Sep 20, 2026',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1600596542815-52adcl45bfd0?auto=format&fit=crop&w=600&q=80',
+    excerpt: 'Simple staging tips and small upgrades that can significantly increase your property\'s value and speed up the sale.',
+  },
+]

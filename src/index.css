@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-navy text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-xl transition-all duration-200 px-6 py-3 text-sm;
+  }
+  .btn-primary {
+    @apply btn bg-navy text-white hover:bg-navy-dark shadow-soft;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-white hover:bg-gold-dark shadow-soft;
+  }
+  .btn-outline {
+    @apply btn border border-border bg-white text-ink hover:border-navy hover:text-navy;
+  }
+  .btn-ghost {
+    @apply btn text-ink hover:bg-beige;
+  }
+  .card {
+    @apply bg-white rounded-xl2 border border-border shadow-soft transition-all duration-300;
+  }
+  .input {
+    @apply w-full px-4 py-2.5 text-sm bg-white border border-border rounded-xl text-ink placeholder:text-muted focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-colors;
+  }
+  .label {
+    @apply block text-xs font-semibold text-muted uppercase tracking-wide mb-1.5;
+  }
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl font-bold text-navy-dark;
+  }
+  .container-x {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f0ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5c5c0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a09b;
+}
+
+/* Hide scrollbar for horizontal scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
